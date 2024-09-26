@@ -16,6 +16,7 @@ explore: billion_orders {
     sql_on: ${billion_orders.order_id} = ${orders.id} ;;
     relationship: many_to_one
   }
+  #test
 
   join: users {
     type: left_outer
