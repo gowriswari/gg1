@@ -122,6 +122,7 @@ explore: orders {
 }
 
 explore: order_items {
+  symmetric_aggregates: no
   join: orders {
     type: left_outer
     sql_on: ${order_items.order_id} = ${orders.id} ;;
